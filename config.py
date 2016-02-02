@@ -54,15 +54,15 @@ Utried = conf.registerPlugin('Utried')
 #     registry.Boolean(False, _("""Help for someConfigVariableName.""")))
 
 conf.registerGlobalValue(Utried, 'ImgurClientId',
-     registry.String(None, """imgur ClientId.""", private=True))
+     registry.String("", """imgur ClientId.""", private=True))
 conf.registerGlobalValue(Utried, 'ImgurAPIKey',
-     registry.String(None, """imgur API key.""", private=True))
+     registry.String("", """imgur API key.""", private=True))
 conf.registerGlobalValue(Utried, 'ImgurURL',
      registry.String('https://api.imgur.com/3/upload.json', """URL for imgur API."""))
 conf.registerGlobalValue(Utried, 'utriedImage',
-     registry.String(None, """Path to local image to add text for utried.""", private=True))
+     registry.String("", """Path to local image to add text for utried.""", private=True))
 conf.registerGlobalValue(Utried, 'utriedFont',
-     registry.String(None, """Path to local font to add text for utried.""", private=True))
+     registry.String("", """Path to local font to add text for utried.""", private=True))
 conf.registerGlobalValue(Utried, 'utriedDefault',
      registry.String('http://i.imgur.com/kpIp6nN.png', """URL for default utried picture if no text is added."""))
 
