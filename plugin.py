@@ -94,7 +94,7 @@ class Utried(callbacks.Plugin):
             bin = f.read()
             f.close()
             b64image = base64.b64encode(bin)
-            headers = {"Authorization": self.imgurClientId}
+            headers = {"Authorization": "Client-ID %s" % (self.imgurClientId)}
             payload = {'key': self.imgurAPIKey, 'image': b64image, 'title': 'utried',}
             r = requests.post(self.imgurURL, headers=headers, data=payload)
             j = json.loads(r.text)
